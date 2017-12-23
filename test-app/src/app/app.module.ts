@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import {HeaderComponent} from "./header/header.component";
 import { UserlistComponent } from './userlist/userlist.component';
 import { UsersmapComponent } from './usersmap/usersmap.component';
-import { UserComponent } from './userlist/user/user.component';
 import { UseritemComponent } from './userlist/useritem/useritem.component';
+import { UserListControllersComponent } from './userlist/user-list-controllers/user-list-controllers.component';
 
 
 @NgModule({
@@ -16,8 +16,8 @@ import { UseritemComponent } from './userlist/useritem/useritem.component';
     HeaderComponent,
     UserlistComponent,
     UsersmapComponent,
-    UserComponent,
-    UseritemComponent
+    UseritemComponent,
+    UserListControllersComponent
   ],
   imports: [
     BrowserModule

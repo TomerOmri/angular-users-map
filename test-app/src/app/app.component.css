@@ -1,0 +1,21 @@
+#container {
+  margin: 0 auto;
+  width: 800px;
+  overflow: hidden;
+  padding-top: 100px;
+}
+
+#userListData {
+  width: 300px;
+  float:left; /* add this */
+
+}
+
+#usersMap {
+  overflow: hidden;
+}
+
+.logo{
+  margin: 0 auto;
+
+}
