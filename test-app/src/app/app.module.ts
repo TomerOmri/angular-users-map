@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import {HeaderComponent} from "./header/header.component";
 import { UserlistComponent } from './userlist/userlist.component';
 import { UsersmapComponent } from './usersmap/usersmap.component';
-import { UseritemComponent } from './userlist/useritem/useritem.component';
+import { userItem } from './userlist/useritem/useritem.component';
 import { UserListControllersComponent } from './userlist/user-list-controllers/user-list-controllers.component';
-
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -16,11 +16,14 @@ import { UserListControllersComponent } from './userlist/user-list-controllers/u
     HeaderComponent,
     UserlistComponent,
     UsersmapComponent,
-    UseritemComponent,
+    userItem,
     UserListControllersComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBEre0hIZwxrdj73QCNjONdQ7zF8tW9yik'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

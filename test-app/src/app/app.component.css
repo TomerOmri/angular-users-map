@@ -8,6 +8,8 @@
 #userListData {
   width: 300px;
   float:left; /* add this */
+  max-height: 320px;
+  overflow: scroll;
 
 }
 

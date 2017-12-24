@@ -5,11 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './useritem.component.html',
   styleUrls: ['./useritem.component.css']
 })
-export class UseritemComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+export class userItem {
+  _id: string;
+  name: string;
+  longitude: number;
+  latitude: number;
 
 }
