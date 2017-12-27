@@ -1,20 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-import { USERS } from './useritem/users-mock';
+import { User } from '../user';
+import { UserService } from '../user-service';
 
 @Component({
   selector: 'app-userlist',
   templateUrl: './userlist.component.html',
   styleUrls: ['./userlist.component.css']
 })
+
+
 export class UserlistComponent implements OnInit {
 
-  users = USERS;
+  users: User[];
 
-  constructor() { }
+  constructor(private userService: UserService) { }
 
   ngOnInit() {
+    this.getUsers();
   }
 
-
+  getUsers(): void {
+    this.userService
+      .getUsers()
+      .subscribe(users => this.users = users);
+  }
 
 }

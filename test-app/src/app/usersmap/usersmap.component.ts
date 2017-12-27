@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../user';
+import { UserService } from '../user-service';
 
 @Component({
   selector: 'app-usersmap',
@@ -6,12 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./usersmap.component.css']
 })
 export class UsersmapComponent implements OnInit {
-  constructor() { }
+  constructor(private userService: UserService) { }
   ngOnInit() {
+    this.getUsers();
   }
+
+  users: User[];
   zoom: number = 16;
   lat: number = 32.0786136;
   lng: number = 34.7773536;
-  // lat: number = 51.678418;
-  // lng: number = 7.809007;
+
+  getUsers(): void {
+    this.userService
+      .getUsers()
+      .subscribe(users => this.users = users);
+  }
 }

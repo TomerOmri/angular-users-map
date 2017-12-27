@@ -1,11 +1,11 @@
-import { userItem } from "./useritem.component";
+import { User } from "./user";
 
-export const USERS: userItem[] = [
+export const USERS: User[] = [
   {
     "_id": "5a40031efdaaaeaecded68d4",
     "name": "Jackson Soto",
-    "latitude": -68.262337,
-    "longitude": 31.11442
+    "latitude": 32.0786936,
+    "longitude": 34.7779536
   },
   {
     "_id": "5a40031ecc35a7f1514c63e6",
