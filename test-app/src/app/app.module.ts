@@ -7,16 +7,16 @@ import { AppComponent } from './app.component';
 import {HeaderComponent} from "./header/header.component";
 import { UserlistComponent } from './userlist/userlist.component';
 import { UsersmapComponent } from './usersmap/usersmap.component';
-import { UserListControllersComponent } from './userlist/user-list-controllers/user-list-controllers.component';
 import { AgmCoreModule } from '@agm/core';
+import { UserinfoComponent } from './userinfo/userinfo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    UserinfoComponent,
     UserlistComponent,
-    UsersmapComponent,
-    UserListControllersComponent
+    UsersmapComponent
   ],
   imports: [
     BrowserModule,

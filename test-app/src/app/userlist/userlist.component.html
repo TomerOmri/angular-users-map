@@ -1,7 +1,10 @@
 <ul class="usersList">
   <li *ngFor="let user of users">
-    {{buttonClicked}}
-    <!--<span> {{user._id}} </span>-->
-    <span> {{user.name}} </span>
+    <!--{{buttonClicked}}-->
+    <!--<span> {{user.name}} </span>-->
+    <app-userinfo [name]="user.name" [photo]="user.picture" ></app-userinfo>
+
+
+
   </li>
 </ul>
