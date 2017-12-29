@@ -1,3 +1,24 @@
 .tile{
   min-height: 15px;
+  padding: 10px;
+  border: 1px solid red;
+}
+
+.userMainDetails{
+  width: 200px;
+}
+
+.userPhoto{
+  width: 50px;
+  float: left;
+}
+
+.userMainDetails userMainInfo{
+  overflow: hidden;
+}
+
+
+.removeButton{
+  right: 0;
+  align-content: right;
 }

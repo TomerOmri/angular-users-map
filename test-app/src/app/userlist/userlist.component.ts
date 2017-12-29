@@ -12,7 +12,6 @@ import { UserService } from '../user-service';
 export class UserlistComponent implements OnInit {
 
   users: User[];
-  name = "moshe";
 
   constructor(private userService: UserService) { }
 
@@ -25,5 +24,4 @@ export class UserlistComponent implements OnInit {
       .getUsers()
       .subscribe(users => this.users = users);
   }
-
 }

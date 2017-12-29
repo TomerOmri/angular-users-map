@@ -1,6 +1,6 @@
 import { User } from "./user";
 
-export const USERS: User[] = [
+export let USERS: User[] = [
   {
     "_id": "5a43f38d0d65d89ccd3217c9",
     "name": "Mcguire Wood",
