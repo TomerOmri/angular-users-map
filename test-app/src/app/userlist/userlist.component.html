@@ -1,15 +1,10 @@
-<ul class="userList">
-  <li *ngFor="let user of users">
-    <!--{{buttonClicked}}-->
-    <!--<span> {{user.name}} </span>-->
+<div class="userList">
+  <div *ngFor="let user of users">
     <app-userinfo [name]="user.name"
                   [photo]="user.picture"
                   [age]="user.age"
                   [email]="user.email"
-                  [userId]="user._id"
-    ></app-userinfo>
-
-
-
-  </li>
-</ul>
+                  [userId]="user._id">
+    </app-userinfo>
+  </div>
+</div>

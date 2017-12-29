@@ -1,0 +1,25 @@
+#formSection{
+  display: none;
+  padding: 20px;
+}
+
+.formContainer{
+  width: 800px;
+
+
+}
+
+.leftData{
+  width: 350px;
+  float: left;
+}
+
+.rightData{
+}
+.menuBar{
+  padding-top: 20px;
+}
+
+.inputField{
+  padding: 2px;
+}

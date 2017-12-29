@@ -7,10 +7,13 @@ import { USERS } from "./users-mock";
 @Injectable()
 export class UserService {
 
+
+
   constructor() { }
 
   getUsers(): Observable<User[]> {
-    return of(USERS);
+    var userList = of(USERS);
+    return userList;
   }
 
 }

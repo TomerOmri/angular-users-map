@@ -1,0 +1,45 @@
+<div class="container">
+  {{ currentUser }}
+  <form>
+    <div class="form-group">
+      <label for="name">Name: </label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="myUser.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="text" class="form-control" id="age" required [(ngModel)]="myUser.age" name="age">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email: </label>
+      <input type="text" class="form-control" id="email" [(ngModel)]="myUser.email" name="email">
+    </div>
+
+    <div class="form-group">
+      <label for="active">isActive</label>
+      <input type="text" class="form-control" id="active" [(ngModel)]="myUser.isActive" name="isActive">
+    </div>
+
+    <div class="form-group">
+      <label for="longitude">Longitude</label>
+      <input type="text" class="form-control" id="longitude" [(ngModel)]="myUser.longitude" name="longitude">
+    </div>
+
+    <div class="form-group">
+      <label for="latitude">Latitude</label>
+      <input type="text" class="form-control" id="latitude" [(ngModel)]="myUser.latitude" name="latitude">
+    </div>
+
+
+    <div class="form-group">
+      <label for="photo">Photo Link</label>
+      <input type="text" class="form-control" id="photo" [(ngModel)]="myUser.picture" name="photo">
+    </div>
+
+    <div class="formSubmit">
+      <button (click)="onSubmit()" type="submit">Submit</button>
+    </div>
+
+  </form>
+</div>

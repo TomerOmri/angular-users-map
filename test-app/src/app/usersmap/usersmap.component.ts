@@ -8,7 +8,7 @@ import { UserService } from '../user-service';
   styleUrls: ['./usersmap.component.css']
 })
 export class UsersmapComponent implements OnInit {
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService) {}
   ngOnInit() {
     this.getUsers();
   }
@@ -21,6 +21,9 @@ export class UsersmapComponent implements OnInit {
   getUsers(): void {
     this.userService
       .getUsers()
-      .subscribe(users => this.users = users);
+      .subscribe(users => {
+        this.users = users
+        console.log("map");
+      });
   }
 }
